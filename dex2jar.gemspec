@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Dex2jar::VERSION
   spec.authors       = ["Slawomir Smiechura"]
   spec.email         = ["ssmiech@gmail.com"]
-  spec.summary       = 'Unpack the apk to a jar'
+  spec.summary       = 'Convert the apk to a jar'
   spec.description   = ''
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/ssmiech/dex2jar"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

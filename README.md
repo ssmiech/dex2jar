@@ -1,6 +1,6 @@
 # Dex2jar
 
-TODO: Write a gem description
+Ruby wrapper around android's dex2jar command. Use to dex2jar to generate .jar file. 
 
 ## Installation
 
@@ -18,7 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ dex2jar [options] <file0> [file1 ... fileN]    
+
+    Options:
+      --debug-info, -d:   translate debug info
+           --force, -f:   force overwrite
+         --verbose, -v:   show progress
+      --output, -o <s>:   output .jar file, default is
+                          $current_dir/[file-name]-dex2jar.jar
+            --help, -h:   Show this message    
 
 ## Contributing
 
