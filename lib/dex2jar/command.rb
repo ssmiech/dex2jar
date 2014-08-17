@@ -14,9 +14,9 @@ module Dex2jar
 
     def dex2jar_command
       if (windows_environment?)
-        'bin/dex2jar-0.0.9.15/d2j-dex2jar.bat'
+        "#{Dex2jar::root_path}/bin/dex2jar-0.0.9.15/d2j-dex2jar.bat"
       else
-        'bin/dex2jar-0.0.9.15/d2j-dex2jar.sh'
+        "#{Dex2jar::root_path}/bin/dex2jar-0.0.9.15/d2j-dex2jar.sh"
       end
     end
 

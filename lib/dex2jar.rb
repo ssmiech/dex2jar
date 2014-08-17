@@ -5,4 +5,8 @@ module Dex2jar
   def self.execute(options, files)
     Command.new(options, files).execute
   end
+
+  def self.root_path
+    File.dirname __dir__
+  end
 end
