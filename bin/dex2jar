@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+require 'dex2jar'
+require 'trollop'
+
+options = Trollop::options do
+  desc = 'd2j-dex2jar -- convert dex to jar'
+  usage = 'usage: d2j-dex2jar [options] <file0> [file1 ... fileN]'
+
+  opt 'debug-info', 'translate debug info', :short => '-d'
+  opt 'force',      'force overwrite', :short => '-f'
+  opt 'verbose',    'show progress', :short => '-v'
+
+  opt 'output',     'output .jar file, default is $current_dir/[file-name]-dex2jar.jar', :type => :string, :short => '-o'
+end
+
+def sanitize_options(options)
+  opts = []
+  opts.push('-d') if options.delete('debug-info')
+  opts.push('-f') if options.delete('force')
+  opts.push('-v') if options.delete('verbose')
+
+  if (output_path = options.delete('output'))
+    opts.push("-o #{output_path}")
+  end
+  opts.join(' ')
+end
+
+Dex2jar.execute(sanitize_options(options), ARGV)
