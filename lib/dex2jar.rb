@@ -7,6 +7,6 @@ module Dex2jar
   end
 
   def self.root_path
-    File.expand_path('..', Dir.pwd)
+    File.expand_path('..', File.dirname(__FILE__))
   end
 end
