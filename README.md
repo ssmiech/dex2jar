@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ssmiech/dex2jar.svg?branch=master)](https://travis-ci.org/ssmiech/dex2jar.svg?branch=master)
+[![Build Status](https://travis-ci.org/ssmiech/dex2jar.svg?branch=master)](https://travis-ci.org/ssmiech/dex2jar)
 [![Coverage Status](https://coveralls.io/repos/ssmiech/dex2jar/badge.png)](https://coveralls.io/r/ssmiech/dex2jar)
 # Dex2jar
 
