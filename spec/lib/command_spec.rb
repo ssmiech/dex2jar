@@ -21,7 +21,7 @@ describe Dex2jar::Command do
     it 'executes dex2jar.sh on unix environment' do
       expect(command).to receive(:windows_environment?).and_return(false)
 
-      expect(command.send(:dex2jar_command)).to be('bin/dex2jar-0.0.9.15/d2j-dex2jar.sh')
+      expect(command.send(:dex2jar_command)).to include('bin/dex2jar-0.0.9.15/d2j-dex2jar.sh')
     end
   end
 end
