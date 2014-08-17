@@ -15,13 +15,13 @@ describe Dex2jar::Command do
     it 'executes dex2jar.bat on windows environment' do
       expect(command).to receive(:windows_environment?).and_return(true)
 
-      expect(command.send(:dex2jar_command)).to eql('bin/dex2jar-0.0.9.15/d2j-dex2jar.bat')
+      expect(command.send(:dex2jar_command)).to include('bin/dex2jar-0.0.9.15/d2j-dex2jar.bat')
     end
 
     it 'executes dex2jar.sh on unix environment' do
       expect(command).to receive(:windows_environment?).and_return(false)
 
-      expect(command.send(:dex2jar_command)).to eql('bin/dex2jar-0.0.9.15/d2j-dex2jar.sh')
+      expect(command.send(:dex2jar_command)).to include('bin/dex2jar-0.0.9.15/d2j-dex2jar.sh')
     end
   end
 end
