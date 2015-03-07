@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/ssmiech/dex2jar.svg?branch=master)](https://travis-ci.org/ssmiech/dex2jar)
 [![Coverage Status](https://coveralls.io/repos/ssmiech/dex2jar/badge.png)](https://coveralls.io/r/ssmiech/dex2jar)
+[![Code Climate](https://codeclimate.com/github/ssmiech/dex2jar/badges/gpa.svg)](https://codeclimate.com/github/ssmiech/dex2jar)
 # Dex2jar
 
 Ruby wrapper around android's dex2jar command. Use to dex2jar to generate .jar file.
